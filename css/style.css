@@ -305,7 +305,7 @@ ul, ol {
 /*END SERVICES BLOCK*/	
 
 /*START AD BLOCK*/
-.ad {
+.offer {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -317,11 +317,11 @@ ul, ol {
 	background-image: -webkit-linear-gradient( 0deg, rgb(33,27,25) 0%, rgb(78,52,39) 100%);
 	background-image: -ms-linear-gradient( 0deg, rgb(33,27,25) 0%, rgb(78,52,39) 100%);
 }
-.ad-wrapper {
+.offer-wrapper {
 	width: 531px;
 	margin: 0 470px 0 0;
 }
-.ad-title {
+.offer-title {
 	width: 100%;
 	font-size: 28px;
 	font-family: "Raleway";
@@ -329,10 +329,10 @@ ul, ol {
 	line-height: 1.2;
 	text-align: left;
 }
-.ad-title span {
+.offer-title span {
 	color: rgb(199, 178, 153);
 }
-.ad-txt {
+.offer-txt {
 	width: 100%;
 	margin: 0;
 	font-size: 18px;
@@ -340,7 +340,7 @@ ul, ol {
 	line-height: 1.2;
 	text-align: left;
 }  
-.ad-button {
+.offer-button {
 	width: 170px;
 	min-height: 50px;
 	border: none;
@@ -349,7 +349,7 @@ ul, ol {
 	background-color: #998675;
 	box-shadow: inset 0px 3px 0px 0px rgba(115, 99, 87, 0.004);
 }  
-.ad-button-txt {
+.offer-button-txt {
 	font-size: 14px;
 	font-family: "Raleway";
 	color: rgb(255, 255, 255);
@@ -358,16 +358,16 @@ ul, ol {
 	line-height: 1.643;
 	text-align: center;
 }
-.ad-button:hover {
+.offer-button:hover {
 	background-color: #fff;
 }
-.ad-button:hover .ad-button-txt{
+.offer-button:hover .offer-button-txt{
 	color: #998675;
 }
-.ad-button:active {
+.offer-button:active {
 	background-color: #fff;
 }
-.ad-button:active .ad-button-txt{
+.offer-button:active .offer-button-txt{
 	color: #736357;
 }
 /*END AD BLOCK*/
@@ -1210,18 +1210,21 @@ input[type="checkbox"]:checked ~ .page-header-menu-list {
 /*END SERVICES BLOCK*/	
 
 /*START AD BLOCK*/
-.ad {
+.offer {
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
 	width: 100%;
 	padding: 57px 23px;
 }
-.ad-wrapper {
+.offer-wrapper {
 	width: 100%;
 	margin: 0;
 }
-.ad-txt {
+.offer-title {
+    font-size: 23px;
+}
+.offer-txt {
 	padding-bottom: 45px;
 	box-sizing: border-box;
 } 
@@ -1260,6 +1263,7 @@ input[type="checkbox"]:checked ~ .page-header-menu-list {
 	display: block;
 	width: 26%;
 	text-align: center;
+	font-size: 10px;
 }
 /*END PROJECTS BLOCK*/
 
@@ -1363,10 +1367,7 @@ body {
 /*END SERVICES BLOCK*/	
 	
 /*START AD BLOCK*/
-.ad-title {
-    font-size: 23px;
-}
-.ad-txt {
+.offer-txt {
 	padding-top: 10px;
 	font-size: 16px;
 } 
@@ -1383,9 +1384,6 @@ body {
 	font-size: 10px;
 	padding: 11px 15px;
 }
-.projects-btn {
-	font-size: 10px;
-}
 /*END PROJECTS BLOCK*/
 	
 /*START PROGRESS BLOCK*/
@@ -1396,5 +1394,92 @@ body {
 	font-size: 12px;
 }
 /*END PROGRESS BLOCK*/
+
+/*START PAGE FOOTER BLOCK*/
+.bottom-menu-wrp {
+	max-width: 480px;
+}
+/*END PAGE FOOTER BLOCK*/
+}
+
+@media(max-width: 320px) {
+body {
+	max-width: 320px;
+}
+
+/*START PAGE HEADER BLOCK*/
+.page-header-menu-wrp {
+	max-width: 320px;
+}
+label {
+    width: 48px;
+    background-size: 100%;
+	background-repeat: no-repeat;
+}
+/*END PAGE HEADER BLOCK*/
+	
+/*START SERVICES BLOCK*/
+.services {
+	max-width: 320px;
+}
+/*END SERVICES BLOCK*/	
+	
+/*START AD BLOCK*/
+.offer-title {
+    font-size: 14px;
+}
+.offer-txt {
+	font-size: 10px;
+} 
+.offer-button {
+    width: 120px;
+}
+.offer-button-txt {
+    font-size: 11px;
+}
+/*END AD BLOCK*/
+	
+/*START PROJECTS BLOCK*/
+.projects {
+	max-width: 320px;
+}
+.projects-nav {
+	flex-wrap: wrap;
+}
+.projects-item {
+    max-width: 300px;
+}
+.projects-item-pic {
+    max-width: 300px;
+}
+.projects-btn {
+    width: 40%;
+}
+/*END PROJECTS BLOCK*/
+	
+/*START PROGRESS BLOCK*/
+.progress-item {
+    width: 100%;
+}
+/*END PROGRESS BLOCK*/
+
+/*START RECENTS POST BLOCK*/
+.recent-posts-item {
+	max-width: 300px;
+}
+.recent-posts-item-pic {
+	max-width: 300px;
+}
+/*END RECENTS POST BLOCK*/
+
+/*START PAGE FOOTER BLOCK*/
+.bottom-menu-wrp {
+	max-width: 320px;
+}
+.bottom-menu-nav-list-item,
+.bottom-menu-rights-list-item {
+    font-size: 9px;
+}
+/*END PAGE FOOTER BLOCK*/
 }
 /*END MEDIA*/
