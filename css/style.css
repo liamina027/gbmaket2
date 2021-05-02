@@ -304,7 +304,7 @@ ul, ol {
 }
 /*END SERVICES BLOCK*/	
 
-/*START AD BLOCK*/
+/*START OFFER BLOCK*/
 .offer {
 	display: flex;
 	justify-content: center;
@@ -370,7 +370,7 @@ ul, ol {
 .offer-button:active .offer-button-txt{
 	color: #736357;
 }
-/*END AD BLOCK*/
+/*END OFFER BLOCK*/
 
 /*START PROJECTS BLOCK*/
 .projects {
